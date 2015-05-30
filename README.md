@@ -14,4 +14,4 @@ Most of this is directly from the [chef-server cookboks's readme](https://github
 * git is installed
 * curl is installed
 * The user running this has sudo
-* You are running this on a chef-supported lunix platform
+* You are running this on a chef-supported linux platform
