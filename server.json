@@ -1,0 +1,6 @@
+{
+  "chef-sever": {
+    "api_fqdn": "chekk.squirrels.wtf",
+    "addons": [ "opscode-manage", "chef-sync" ]
+  }
+}
