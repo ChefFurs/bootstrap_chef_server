@@ -6,7 +6,7 @@ Most of this is directly from the [chef-server cookboks's readme](https://github
 
 ## Usage
 1. Fork
-2. Edit server.json
+2. **Edit server.json** This sets the servers hostname!!
 3. donwload onto new server and set the hostname
 4. run chef_run
 
