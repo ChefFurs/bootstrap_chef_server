@@ -3,7 +3,9 @@ echo "Pull latest git to be sure"
 git pull origin master || exit 5
 
 echo "Ensure we have the right chef"
-curl -L https://www.chef.io/chef/install.sh | sudo bash -s -- -v 12.3.0
+if [[ ! -d /opt/chef ]]; then
+  curl -L https://www.chef.io/chef/install.sh | sudo bash -s -- -v 12.3.0
+fi
 
 echo "Make chef working directories"
 mkdir cookbooks
