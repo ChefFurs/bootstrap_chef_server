@@ -1,7 +1,4 @@
 #!/usr/bin/env bash
-echo "Pull latest git to be sure"
-git pull origin master || exit 5
-
 echo "Ensure we have the right chef"
 if [[ ! -d /opt/chef ]]; then
   curl -L https://www.chef.io/chef/install.sh | sudo bash -s -- -v 12.3.0
