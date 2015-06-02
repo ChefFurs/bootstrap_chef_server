@@ -12,6 +12,5 @@ Most of this is directly from the [chef-server cookboks's readme](https://github
 3. `./chef_run.sh`
 
 ## Assumptions
-* git is installed
 * The user running this has sudo
 * You are running this on a chef-supported linux platform
