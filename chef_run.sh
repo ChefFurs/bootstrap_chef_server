@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 echo "Ensure we have the right chef"
 if [[ ! -d /opt/chef ]]; then
-  curl -L https://www.chef.io/chef/install.sh | sudo bash -s -- -v 12.3.0
+  curl -L https://www.chef.io/chef/install.sh | sudo bash -s -- -v 12.4.3
 fi
 
 echo "Make chef working directories"
