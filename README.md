@@ -13,4 +13,4 @@ Most of this is directly from the [chef-server cookboks's readme](https://github
 
 ## Assumptions
 * The user running this has sudo
-* You are running this on a chef-supported linux platform
+* You are running this on a chef server supported linux platform (Ubuntu or CentOS/RedHat)

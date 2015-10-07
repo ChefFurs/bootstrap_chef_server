@@ -8,8 +8,8 @@ echo "Make chef working directories"
 mkdir cookbooks
 
 echo "Install pre-reqs"
-for i in "chef-server" "chef-ingredient" "packagecloud"; do
-  curl -#L https://supermarket.chef.io/cookbooks/$i/download | sudo tar xvzC cookbooks/
+for dependency in "chef-server" "chef-ingredient" "yum-chef" "yum" "apt-chef" "apt" "packagecloud"; do
+  curl -#L https://supermarket.chef.io/cookbooks/$dependency/download | tar xvzC cookbooks/
 done
 
 sudo chef-client -z --runlist 'recipe[chef-server::default]' -j server.json
